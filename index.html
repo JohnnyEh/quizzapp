@@ -13,27 +13,24 @@
   <p>No, not that Albuquerque. The song, by 'Wierd Al' Yankovic.  You've never heard it?  You're gonna suck at this quiz...</p>
   <button class="startButton">BEGIN</button>
 </div>
-<div class="quiz">
-  <div class="question1">
-    <h3>Question <span></span>/5</h3>
-      <p><span></span></p>
-        <form>
-          <input type="radio" name="question" value="0"><span></span><br>
-          <input type="radio" name="question" value="1"><span></span><br>
-          <input type="radio" name="question" value="2"><span></span><br>
-          <input type="radio" name="question" value="3"><span></span><br>
+  <div class="question">
+    <h3>Question <span id="quesNum"></span>/5</h3>
+      <p id="statement"></p>
+        <form id="answers">
+          <input type="radio" class="answer" name="question" value="1"><span id="ans1"></span><br>
+          <input type="radio" class="answer" name="question" value="2"><span id="ans2"></span><br>
+          <input type="radio" class="answer" name="question" value="3"><span id="ans3"></span><br>
+          <input type="radio" class="answer" name="question" value="4"><span id="ans4"></span><br>
           <br>
-          <input type="submit" value="SUBMIT">
+          <input id="subButton" type="button" value="SUBMIT">
         </form>
+        <p>Correct: <span class="tally">0</span>/5</p>
   </div>
-  
-</div>
 <div class="results">
 <h1>Thanks for stopping by Albuquerque!</h1>
-<p class="fail">Man, I knew you were gonna suck at this quiz. At least listen to the song before trying again.</p>
-<p class="average">Yeah, and if a million monkeys typed on a million typewriters for a million years they'd eventually type out the works of Spielberg.  Or something like that.</p>
-<p class="expert">Wow, man! That was totally amazing!  Wakka Wakka doo doo Yeah!!</p>
-<button>TRY AGAIN?</button>
+<p>Correct: <span class="tally"></span>/5</p>
+<p class="message"></p>
+<form><input class="endbutton" type="button" onClick="history.go(0)" value="TRY AGAIN?"></form>
 </div>
 </div>
 <script src="jquery-3.0.0.min.js"></script>
